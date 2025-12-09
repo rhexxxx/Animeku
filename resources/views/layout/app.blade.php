@@ -11,7 +11,7 @@
 </head>
 <body>
     @include('partials.navbar')
-    <div class="container h-full w-full">
+    <div class="container bg-abu h-full w-full">
         @yield('content')
     </div>
     @include('partials.footer')
