@@ -4,7 +4,7 @@
         <div class="input  rounded-full border-1 border-black border-solid">
             <form action="" method="get" class="flex items-center">
                     <input class="py-2 px-3 w-lg" type="text" name="search" id="src" placeholder="search" autocomplete="off">
-                    <button type="submit" name="kirim" dir="ltr" class="btn py-2 px-3"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button type="submit" name="kirim" dir="ltr" class="btn py-2 px-3"><i class="fa-solid fa-magnifying-glass bg-transparent"></i></button>
             </form>
         </div>
     </div>
