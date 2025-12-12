@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ $title }}</title>
     <script src="https://kit.fontawesome.com/6f63cd3ddc.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="../resources/css/style.css">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>

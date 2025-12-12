@@ -12,6 +12,16 @@
     --color-ijau : #8BAE66;
     --color-abu : #F3F8FF;
     --color-icon :  #465b52;
+    --color-button : #750E21;
+    --color-login : #750E21;
+    --color-bayangan : #0a3edd1a;
+    --color-btn-text : #082032;
+    --color-btn1 :#FED9ED;
+    --color-btn2 : #cdebcc ;
+    --color-btn3 : #89B9AD ;
+    --color-btn4 : #872341 ;
+    --color-btn5 : #F8FFD2 ;
+    --color-btn6 : #F0DBAF ;
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
