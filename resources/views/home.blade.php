@@ -18,48 +18,70 @@
             <a href="search.php?search=nendroid">
                 <div class="fe-box text-center p-3 rounded-xl border border-login shadow-lg p-3 rounded-xl border border-login shadow-lg">
                     <img class="rounded-lg h-[30vh] w-full" src="{{ asset('images/features/nendroid.png') }}" alt="">
-                    <h6 class="my-2 py-2 px-1 rounded-lg bg-btn1 text-btn-text font-medium">Nendroid</h6>
+                    <h6 class="my-2 py-2 px-1 rounded-lg bg-login text-btn2 font-medium">Nendroid</h6>
                 </div>
             </a>
             <a href="search.php?search=figure mx-2">
                 <div class="fe-box text-center p-3 rounded-xl border border-login shadow-lg p-3 rounded-xl border border-login shadow-lg p-3 rounded-xl border border-login shadow-lg p-3 rounded-xl border border-login shadow-lg p-3 rounded-xl border border-login shadow-lg p-3 rounded-xl border border-login shadow-lg">
                     <img class="rounded-lg h-[30vh] w-full" src="{{ asset('images/features/scale_figures.png') }}" alt="">
-                    <h6 class="my-2 py-2 px-1 rounded-lg bg-btn2 text-btn-text font-medium">Scale Figures</h6>
+                    <h6 class="my-2 py-2 px-1 rounded-lg bg-login text-btn2 font-medium">Scale Figures</h6>
                 </div>
             </a>
             <a href="search.php?search=figma">
                 <div class="fe-box text-center p-3 rounded-xl border border-login shadow-lg p-3 rounded-xl border border-login shadow-lg p-3 rounded-xl border border-login shadow-lg p-3 rounded-xl border border-login shadow-lg p-3 rounded-xl border border-login shadow-lg p-3 rounded-xl border border-login shadow-lg">
                     <img class="rounded-lg h-[30vh] w-full" src="{{ asset('images/features/figma.png') }}" alt="">
-                    <h6 class="my-2 py-2 px-1 rounded-lg bg-btn3 text-btn-text font-medium">Figma</h6>
+                    <h6 class="my-2 py-2 px-1 rounded-lg bg-login text-btn2 font-medium">Figma</h6>
                 </div>
             </a>
             <a href="search.php?search=merchandise">
                 <div class="fe-box text-center p-3 rounded-xl border border-login shadow-lg p-3 rounded-xl border border-login shadow-lg p-3 rounded-xl border border-login shadow-lg p-3 rounded-xl border border-login shadow-lg p-3 rounded-xl border border-login shadow-lg p-3 rounded-xl border border-login shadow-lg">
                     <img class="rounded-lg h-[30vh] w-full" src="{{ asset('images/features/merchandise.png') }}" alt="">
-                    <h6 class="my-2 py-2 px-1 rounded-lg bg-btn4 text-btn2 font-medium">Mercandise</h6>
+                    <h6 class="my-2 py-2 px-1 rounded-lg bg-login text-btn2 font-medium">Mercandise</h6>
                 </div>
             </a>
             <a href="search.php?search=model kit">
                 <div class="fe-box text-center p-3 rounded-xl border border-login shadow-lg p-3 rounded-xl border border-login shadow-lg p-3 rounded-xl border border-login shadow-lg p-3 rounded-xl border border-login shadow-lg p-3 rounded-xl border border-login shadow-lg p-3 rounded-xl border border-login shadow-lg">
                     <img class="rounded-lg h-[30vh] w-full" src="{{ asset('images/features/model_kit.png') }}" alt="">
-                    <h6 class="my-2 py-2 px-1 rounded-lg bg-btn5 text-btn-text font-medium">Model Kit</h6>
+                    <h6 class="my-2 py-2 px-1 rounded-lg bg-login text-btn2 font-medium">Model Kit</h6>
                 </div>
             </a>
             <a href="search.php?search=plush">
                 <div class="fe-box text-center p-3 rounded-xl border border-login shadow-lg p-3 rounded-xl border border-login shadow-lg p-3 rounded-xl border border-login shadow-lg p-3 rounded-xl border border-login shadow-lg p-3 rounded-xl border border-login shadow-lg p-3 rounded-xl border border-login shadow-lg">
                     <img class="rounded-lg h-[30vh] w-full" src="{{ asset('images/features/plush.png') }}" alt="">
-                    <h6 class="my-2 py-2 px-1 rounded-lg bg-btn6 text-btn-text font-medium">Plush</h6>
+                    <h6 class="my-2 py-2 px-1 rounded-lg bg-login text-btn2 font-medium">Plush</h6>
                 </div>
             </a>
         </div>
     </section>
-    {{-- <div class="container flex flex-wrap mx-4 my-auto w-full items-center justify-evenly">
-        @for ($i = 0; $i < 6; $i++)
-        <div class="card flex flex-col items-center px-8 py-10 m-3 bg-hijau rounded-xl shadow-lg">
-            <img src="{{ asset('images/kesava.png') }}" alt="" class="w-50 h-40 rounded-lg">
-            <p class="font-medium text-3xl m-3 text-putih">Wow</p>
-            <a href="" class="text-white px-8 py-4 rounded-lg bg-ijau">Button</a>
-        </div>
-        @endfor
-    </div> --}}
+    <section class="top-item px-2 mx-auto container shadow-lg py-8 rounded-md">
+        <section class="index-product1" id="section-p">
+            <div class="product-tittle flex items-center justify-between w-full mx-auto px-5">
+                <h2>Top Item </h2>
+                <a href="category.php?category=Top" class="text-login">See More -></a>
+            </div>
+            <div class="products p-5 grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 xl:grid-cols-5 items-center gap-5">
+                @for($i = 0; $i < 10; $i++)
+                <div class="pro-container">
+                    <div class="pro border border-login rounded-lg shadow-lg">
+                        <a href="product.php?id=">
+                            <img src="images/product/sazabi.png" class="rounded-md xl:h-[35vh] h-[42vh] w-full object-cover object-top" alt="">
+                            <div class="des py-2 px-3">
+                                <span class="text-brand text-lg">Bandai</span>
+                                <h5 class="text-product-name text-lg text-clip overflow-hidden">RG 1/144 MSN-04 Sazabi</h5>
+                                <h4 class="my-2 font-medium text-xl">Rp.170.000</h4>
+                                <div class="product-info flex items-center justify-between">
+                                    <div class="star flex items-center my-2">
+                                        <i class="fas fa-star text-lg text-star"></i>
+                                        <p class="mx-3 text-md">5</p>
+                                    </div>
+                                    <p>500+ terjual</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                @endfor
+            </div>
+        </section>
+    </section>
 @endsection
