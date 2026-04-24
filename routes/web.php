@@ -1,30 +1,20 @@
 <?php
 
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 
-Route::get('/', function () {
-    $data = [
-        'title' => 'Home'
-    ];
-    return view('home', $data);
-});
+Route::get('/', [ProductController::class, 'home'])->name('home');
 
-Route::get('/home', function () {
-    $data = [
-        'title' => 'Home'
-    ];
-    return view('home', $data);
-});
+Route::get('/home', [ProductController::class, 'home']);
+
+Route::get('/shop', [ProductController::class, 'index'])->name('products');
+
+Route::get('/products/{product}', [ProductController::class, 'show'])->name('products.show');
 
 Route::get('/about', function(){
     $data = [
         'title' => "About"
     ];
     return view('about', $data);
-});
-
-Route::get('/product/{id}', function($id){
-    return view('details', [
-        'id' => $id
-    ]);
 });

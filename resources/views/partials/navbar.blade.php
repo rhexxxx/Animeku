@@ -1,9 +1,9 @@
-<section id="header" class="z-50 flex items-center justify-between w-full py-5 px-10 shadow-md sticky">
-    <a href=""><img src="{{ asset('images/logo.png') }}" class="logo" alt=""></a>
+<section id="header" class="z-50 flex items-center justify-between w-full py-5 px-10 shadow-md fixed bg-white">
+    <a href="/home"><img src="{{ asset('images/logo.png') }}" class="logo" alt=""></a>
     <div class="search flex">
         <div class="input  rounded-full border-1 border-black border-solid">
-            <form action="" method="get" class="flex items-center">
-                    <input class="py-2 px-3 w-md bg-transparent" type="text" name="search" id="src" placeholder="search" autocomplete="off">
+            <form action="{{ route('products') }}" method="GET" class="flex items-center">
+                    <input class="py-2 px-3 w-md bg-transparent" type="text" name="search" value="{{ request('search') }}" id="src" placeholder="search" autocomplete="off">
                     <button type="submit" name="kirim" dir="rtl" class="cursor-pointer border-l-1 btn py-2 px-3 hover:bg-button hover:text-white rounded-s-full"><i class="fa-solid fa-magnifying-glass bg-transparent"></i></button>
             </form>
         </div>

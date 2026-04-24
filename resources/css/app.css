@@ -20,6 +20,14 @@
     --color-brand : #606063;
     --color-product-name : #1a1a1a;
     --color-star : #f3b519;
+    --color-cart : #EAD196;
+    --color-newsletter :#041e42;
+    --color-apa :#818ea0;
+    --color-newsletter-btn : #088178;
+    --color-product: #fff;
+    --color-add-button: #E3E6F3;
+    
+    
 
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
