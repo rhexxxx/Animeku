@@ -14,7 +14,9 @@ class ProductController extends Controller
     public function index(Request $request)
     {
         $title = 'Shop';
-        $query = Product::query();
+        $query = Product::with('category');
+
+        $categories = Categories::all();
 
         if ($request->has('rating') && $request->rating != '') {
             $query->where('rating', '>=', $request->rating);
@@ -25,7 +27,10 @@ class ProductController extends Controller
             $query->where(function($q) use ($searchTerm){
                 $q->where('name', 'like', '%' . $searchTerm . '%')
                 ->orWhere('brand', 'like', '%' . $searchTerm . '%')
-                ->orWhere('series', 'like', '%' . $searchTerm . '%');
+                ->orWhere('series', 'like', '%' . $searchTerm . '%')
+                ->orWhereHas('category', function($subQuery) use ($searchTerm){
+                    $subQuery->where('name', 'like', '%' . $searchTerm . '%');
+                });
             });
         }
 

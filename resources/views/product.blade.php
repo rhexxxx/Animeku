@@ -24,22 +24,33 @@
                 <div class="product-add">
                     <button class="add-button w-[70%] text-lg text-add-button bg-login border-none px-3 mx-4 rounded-lg">Add to Cart</button>
                 </div>
-                <div class="product-des-info">
-                    <div class="product-title">
-                        <ul>
-                            <li>Character</li>
-                            <li>Series</li>
-                            <li>Category</li>
-                            <li>Manufacturer</li>
-                        </ul>
+                <div class="product-des-info grid grid-cols-2">
+                    <div class="font-semibold text-gray-600">Character</div>
+                    <div class="col-span-2">
+                        <a href="{{ route('products', ['search' => $product->name]) }}" class="hover:text-blue-600 transition">
+                            {{ $product->name }}
+                        </a>
                     </div>
-                    <div class="product-info">
-                        <ul>
-                            <li><a href="search.php?search="></a></li>
-                            <li><a href="search.php?search="></a></li>
-                            <li><a href="search.php?search="></a></li>
-                            <li><a href="search.php?search="></a></li>
-                        </ul>
+
+                    <div class="font-semibold text-gray-600">Series</div>
+                    <div class="col-span-2">
+                        <a href="{{ route('products', ['search' => $product->series]) }}" class="hover:text-blue-600 transition">
+                            {{ $product->series }}
+                        </a>
+                    </div>
+
+                    <div class="font-semibold text-gray-600">Category</div>
+                    <div class="col-span-2">
+                        <a href="{{ route('products', ['search' => $product->category->name ?? '']) }}" class="hover:text-blue-600 transition">
+                            {{ $product->category->name ?? 'Uncategorized' }}
+                        </a>
+                    </div>
+
+                    <div class="font-semibold text-gray-600">Manufacturer</div>
+                    <div class="col-span-2">
+                        <a href="{{ route('products', ['search' => $product->brand]) }}" class="hover:text-blue-600 transition">
+                            {{ $product->brand }}
+                        </a>
                     </div>
                 </div>
             </div>

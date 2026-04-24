@@ -7,7 +7,7 @@
                     <button type="submit" name="kirim" dir="rtl" class="cursor-pointer border-l-1 btn py-2 px-3 hover:bg-button hover:text-white rounded-s-full"><i class="fa-solid fa-magnifying-glass bg-transparent"></i></button>
             </form>
         </div>
-    </div>
+</div>
     <div class="nav">
         <ul id="navbar" class="flex items-center justify-center text-lg font-semibold">
             <li><a class="active mx-2" href="/">Home</a></li>
